@@ -9,5 +9,5 @@
 # What tools or resources did you find most helpful during this project?
 -CSS grid is the most helpful while designing the webpage although it wasn't easy to use initially to get the desired output.    
 -Resources that I have used:
- [geeksforgeeks](https://www.geeksforgeeks.org/websites-apps/responsive-web-design/)
+ [geeksforgeeks](https://www.geeksforgeeks.org/websites-apps/responsive-web-design/)  
  [w3schools](https://www.w3schools.com/)
