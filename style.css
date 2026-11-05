@@ -1,0 +1,165 @@
+* {
+    margin: .1rem;
+    padding: 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: #595b5b;
+}
+
+/* Base Flexbox Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #251a2e;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-logo a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem; /* spacing tool for flex items */
+}
+
+.nav-links a {
+    color: #b0b0c0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Media Query for different Devices */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid #2e2e4f;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+	section{
+            background: #1e293b;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 1.5rem;
+            border-radius: 28px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        article, aside { 
+            background: #3c578d; 
+            padding: 1.5rem; 
+            margin-left: .5rem;
+            margin-right: .5rem;
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+}
+		main {
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: #acc7d7;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+    }
+
+        /* Responsive Breakpoint: Multi-Column for Desktop / Tablets */
+        @media (min-width: 768px) {
+            main {
+                /* Creates a 3-column layout where the center tracks scale, and the side tracks adjust */
+                grid-template-columns: 2fr 1fr;
+            }
+
+            /* Make the featured section span across both columns at the top */
+            #featured {
+                grid-column: span 2;
+                background-color: #c9c4d6;
+            }
+
+            /* The articles section occupies the left column automatically, but explicitly defined here */
+            #articles {
+                grid-column: 1;
+                background-color: #c9c4d6;
+            }
+
+            /* The aside sidebar occupies the right column */
+            aside {
+                grid-column: 2;
+                background-color: #c9c4d6;
+            }
+        }
+
+        /* Nested grid layout for articles to display side-by-side on desktop */
+        .article-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .article-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+.search-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .search-input {
+            padding: 0.5rem;
+            border: 1px solid #475569;
+            border-radius: 4px;
+            background: #0f172a;
+            color: #fff;
+        }
+
+        .search-btn {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        section, article, aside {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }

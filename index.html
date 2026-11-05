@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+   <nav class="navbar" role="navigation">
+        <div class="nav-logo"><a href="#">First Webpage</a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <main>
+            <img src="images/perscholas.jfif" alt="Perscholas is Talent accelerator" width="160" height="150"/>
+            <img src="images/perscholas.jfi" alt="Perscholas is a proven talent accelerator" width="160" height="150"/>  <!--wrong image src to show alt-->
+            
+        </main>
+    </section>
+    <section id="form">
+         <form class="search-form" action="/search" method="GET" role="search">
+                <label for="user-name">Username:</label>
+                <input type="text" id="user-name" name="userName" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" aria-describedby="password-hint" required>
+                <!-- The ID here matches the aria-describedby value above -->
+                <small id="password-hint">Must be at least 8 characters long and include a number.</small>
+               
+                <input class="search-input" type="search" name="q" placeholder="Search articles..." aria-label="Search blog content">
+                <button class="search-btn" type="submit">Go</button>
+        </form>
+    </section>
+    <section id="featured">
+            <h2>Featured Topic</h2>
+            <p>Welcome to my latest page. Below, you will find independent articles detailing modern engineering practices.</p>
+    </section>
+
+    <section id="articles">
+            <h2>Latest Insights</h2>
+
+            <!--  -->
+            <article>
+                <h3> Semantic HTML</h3>
+                <p>Published on <time datetime="2026-11-04">November 4, 2026</time> by Vaishali Mangla</p>
+                <p>Semantic HTML elements clearly describe their meaning in a human- and machine-readable way. Elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;article&gt;</code> help search engines, browsers, and assistive technologies understand the structure of web content layout perfectly.</p>
+            </article>
+
+            <article>
+                <h3>The Power of Accessibility</h3>
+                <p>Published on <time datetime="2026-10-28">November 4, 2026</time> by Vaishali Mangla</p>
+                <p>When you use the correct tags for the job, you inherently improve accessibility (a11y). Screen readers rely on landmark tags to navigate smoothly, meaning good structural code translates directly to a better user experience for everyone.</p>
+            </article>
+
+    </section>
+
+        <!--  -->
+    <section id="articles">
+        <aside>
+            <h2>Quick Tips</h2>
+            <ul>
+                <li>Never use <code>&lt;section&gt;</code> purely for styling; use a <code>&lt;div&gt;</code> instead.</li>
+                <li>Keep headings nested in sequential order (h1 followed by h2, then h3).</li>
+            </ul>
+        </aside>
+	</section>	
+
+  
+	<!-- The header typically contains the main heading, logo, and navigation -->
+   
+
+    <!-- The footer contains metadata, copyright notes, or contact information -->
+    <footer>
+        <p>&copy; 2026 Perscholas RTT-50 Classroom</p>
+        <p>Contact us at <a href="">info@abc.com</a></p>
+    </footer>
+
+</body>
+</html>
